@@ -1,0 +1,246 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+
+* {
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #ffffff;
+  }
+
+.header__inner{
+    background-color: rgb(204, 144, 212);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    padding: 10px 40px;
+}
+
+.logo__title{
+    display: flex;
+    padding-right: 10px;
+}
+
+.menu__list{
+    display: flex;
+    list-style: none;
+}
+
+.menu__list-item {
+    margin: 0 15px;
+    text-transform: uppercase;
+}
+
+.menu__list-link{
+    border-bottom: 2px solid transparent;
+    transition: all 0.7s;
+}
+
+.menu__list-link:hover{
+    border-bottom: 1px solid #000;
+}
+
+.weather_sect {
+    background: linear-gradient(300deg, #ddfc56, #54dddd);
+    font-family: inherit;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    min-height: 100vh;
+}
+
+#search {
+    display: flex;
+    background-color: #fff;
+    border: none;
+    border-radius: 25px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    font-family: inherit;
+    font-size: 1rem;
+    padding: 1rem;
+    /* min-width: 300px; */
+}
+
+#search:focus {
+    outline: none;
+}
+
+.weather {
+    font-size: 2rem;
+    text-align: center;
+}
+
+.weather h2 {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0;
+}
+
+.login{
+    min-height: 100vh;
+    background: linear-gradient(300deg, #c5ee0d, #fab011);
+    
+}
+
+.login__wrapper{
+    display:flex;
+    flex-wrap: wrap;
+    /* text-align: center; */
+    min-height: inherit;
+    align-items: center;
+    vertical-align: middle;
+    justify-content: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    /* padding-top: 230px; */
+    color: rgb(255, 249, 249);
+}
+
+.log_width{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}
+
+.register,.sign__in{
+    display: inline-block;
+    margin: 0  10px;
+}
+
+
+.sign__in{
+    align-self: flex-start;
+}
+
+button{
+      border-radius: 35px;
+      border-style: none;
+      padding: 5px;
+      margin: 5px;
+      background-color: rgb(84, 109, 252);
+      color: white;
+}
+
+button:hover{
+    transform: scale(1.1);
+}
+
+.profile{
+    min-height: 100vh;
+    background: linear-gradient(300deg, #213ee7, #fab011);
+    display:flex;
+    text-align: center;
+    vertical-align: middle;
+    justify-content: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 180px;
+    
+}
+
+.image{
+    padding-top: 10px;
+}
+
+.card {
+    width: 250px;
+    border: none;
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+.stats {
+    background: #f2f5f8 !important;
+    color: #000 !important;
+}
+
+.articles {
+    font-size: 10px;
+    color: #a1aab9;
+}
+
+.number1 {
+    font-weight: 500;
+}
+
+.followers {
+    font-size: 10px;
+    color: #a1aab9;
+}
+
+.number2 {
+    font-weight: 500;
+}
+
+.rating {
+    font-size: 10px;
+    color: #a1aab9;
+}
+
+.number3 {
+    font-weight: 500;
+}
+
+.menu__btn {
+    display: none;
+  }
+
+@media (max-width:720px){
+    .menu__list {
+        display: block;
+        position: absolute;
+        top: 84px;
+        left: 0;
+        right: 0;
+        text-align: center;
+        background: rgb(0 0 0 / 20%);
+        transform: translateY(-400px);
+        
+      }
+    
+      .menu__list-link {
+        display: block;
+        padding: 20px 0;
+      }
+    
+      .menu__list.menu__list--active {
+        transform: translateY(0);
+      }
+    
+      .menu__btn {
+        display: block;
+        width: 35px;
+        height: 26px;
+        border: none;
+        border-radius: 0px;
+        background-color: transparent;
+        border-top: 3px solid rgb(247, 248, 250);
+        border-bottom: 3px solid rgb(250, 248, 248);
+        position: relative;
+      }
+    
+      .menu__btn::before {
+        content: "";
+        position: absolute;
+        width: 35px;
+        height: 3px;
+        background-color: rgb(223, 220, 219);
+        left: 0;
+        top: 9px;
+      }
+    
+      #profile_card{
+          width: 270px;
+      }
+    
+}
